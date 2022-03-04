@@ -1,0 +1,222 @@
+@import url("http://fonts.googleapis.com/css?family=Teko:300,400,500,600,700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Teko", sans-serif;
+    transition: height 0.5s ease-in-out;
+}
+
+body {
+    background-image: url("Background1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
+.pageMenu {
+    background: #ffffff;
+    height: 0px;
+    overflow: hidden;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Minion */
+
+.banner {
+    background: url("Face5.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    z-index: 100;
+    min-width: 650px;
+    height: 650px;
+}
+
+/* .eye {
+    background-color: rgb(255, 251, 215);
+    position: absolute;
+    top: 150px;
+    left: 160px;
+    width: 180px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 20px;
+    text-align: center;
+    z-index: 98;
+    opacity: 0;
+} */
+
+.ball {
+    background: url("Eye.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 110px;
+    top: 95px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    z-index: 50;
+    opacity: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: blue;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+ul {
+    position: relative;
+}
+
+li {
+    position: relative;
+    list-style: none;
+    padding: 0 20px;
+    margin: 5px 0;
+    overflow: hidden;
+}
+
+a {
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 5.5em;
+    font-weight: 700;
+    line-height: 1em;
+    padding-top: 12px;
+    border-radius: 5px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+a:hover {
+    background-color: #ffffff;
+    color: blue;
+}
+
+.toggle-back {
+    background: url(close.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid blue;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+}
+
+.toggle-back:hover {
+    border: #ffffff;
+}
+
+.toggle {
+    background: url(open-menu.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid blue;
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 1280px;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow{
+    from {box-shadow: 0 0 80px rgb(35, 221, 221);}
+    to {box-shadow: 0 0 50px rgb(35, 221, 221),
+                        0 0 30px rgb(35, 221, 221);}
+                        
+  }
+  
+  /* Navigation links */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  } */
+  
+  /* The subnavigation menu */
+  .subnav:first-child {
+    float: inline-start;
+    overflow: hidden;
+  }
+  
+  /* Subnav button */
+  .subnavbtn {
+    font-size: 88px;
+    border: none;
+    outline: none;
+    color: white;
+    /* padding: 14px 16px; */
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+  
+  /* Add a red background color to navigation links on hover */
+  .navbar .subnav:hover .subnavbtn {
+    background-color: red;
+  }
+  
+  /* Style the subnav content - positioned absolute */
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: red;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .subnav-content2 {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: green;
+    width: 100%;
+    z-index: 1;
+  }
+  
+
+  
+  /* When you move the mouse over the subnav container, open the subnav content */
+  .subnav:hover .subnav-content {
+    display: block;
+  }
+
+  .subnav-content2:hover .content{
+    display: block;
+  }
+
+p {
+font-size: x-large;
+}
